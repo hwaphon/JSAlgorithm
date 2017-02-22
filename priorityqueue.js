@@ -2,7 +2,7 @@
  * @Author: hwaphon
  * @Date:   2017-02-21 22:01:39
  * @Last Modified by:   hwaphon
- * @Last Modified time: 2017-02-21 22:23:42
+ * @Last Modified time: 2017-02-22 10:11:17
  */
 
 'use strict';
@@ -36,19 +36,27 @@ function PriorityQueue() {
 			}
 
 		}
-	}
+	};
 
 	this.isEmpty = function() {
 		return items.length === 0;
-	}
+	};
 
 	this.dequeue = function() {
 		return items.shift();
-	}
+	};
+
+	this.clear = function() {
+		items = [];
+	};
 
 	this.print = function() {
 		for (var i = 0; i < items.length; i++) {
 			console.log(items[i].element.toString());
 		}
+	};
+
+	this.size = function() {
+		return items.length;
 	}
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="queue.js"></script>
+    </head>
+    <body>
+    	<script type="text/javascript">
+    		var queue = new Queue();
+
+    		function hotPotato(nameList, num) {
+    			for (var i = 0; i < nameList.length; i++) {
+    				queue.enqueue(nameList[i]);
+    			}
+
+    			var outter = "",
+    				winner = "";
+    			while(queue.size() > 1) {
+    				for (var i = 0; i < num; i++) {
+    					queue.enqueue(queue.dequeue());
+    				}
+
+    				outter = queue.dequeue();
+    				console.log(outter + " out!");
+    			}
+
+    			winner = queue.dequeue();
+    			console.log("The winner is :" + winner);
+    		}
+
+    		var names = ['John','Jack','Camila','Ingrid','Carl'];
+    		hotPotato(names, 7);
+    	</script>
+    </body>
+</html>
