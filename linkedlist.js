@@ -2,7 +2,7 @@
 * @Author: hwaphon
 * @Date:   2017-02-22 10:45:53
 * @Last Modified by:   hwaphon
-* @Last Modified time: 2017-02-22 14:10:20
+* @Last Modified time: 2017-02-22 14:31:27
 */
 
 'use strict';
@@ -11,7 +11,7 @@ function LinkedList() {
 	var Node = function(element) {
 		this.element = element;
 		this.next = null;
-	}
+	};
 
 	var length = 0,
 		head = null;
