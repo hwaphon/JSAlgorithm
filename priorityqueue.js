@@ -8,6 +8,7 @@
 'use strict';
 
 function PriorityQueue() {
+	
 	var items = [];
 
 	function QueueElement(element, priority) {
