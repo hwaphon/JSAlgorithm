@@ -8,6 +8,7 @@
 'use strict';
 
 function Queue() {
+	
 	var items = [];
 
 	this.enqueue = function(value) {
