@@ -8,6 +8,7 @@
 'use strict';
 
 function Stack() {
+	
 	var items = [];
 
 	this.push = function(value) {
